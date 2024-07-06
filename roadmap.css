@@ -1,0 +1,122 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 20px;
+    background: var(--navfontcolor);
+    /* grid-template-rows: auto 1fr auto; */
+    /* overflow-x: hidden; */
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+
+    font-family: serif;
+    background-color: var(--navfontcolor);
+    color: var(--fontcolor);
+
+}
+
+:root {
+    --navfontcolor: #ede8f5;
+    --cardbackground: #8697c4;
+    --bodybackground: #1f2833;
+    --fontcolor: #66fcf1;
+    --secfontcolor: #51cfc8;
+    --secbodybackground: #0b0c10;
+    --footercolor: rgb(30, 30, 30);
+    --textshadow: 6px 9px 14px #787777;
+
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bodybackground);
+    box-shadow: 0px 2px 18px rgba(226, 222, 222, 0.211);
+    padding: 0px 16px;
+}
+
+.logo {
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.Roadmap {
+    color: var(--navfontcolor);
+    margin: 0px;
+    padding-top: 14px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: var(--navfontcolor);
+}
+
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.AI {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:var(--fontcolor);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    animation: float 1.2s alternate-reverse infinite  ;
+}
+
+#language{
+    /* width: 40%; */
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid blue;
+}
+.content{
+    display: flex;
+    height: 90%;
+    border: 2px solid salmon;
+}
+#sidebar{
+    height: 90%;
+    width: 100%;
+    border: 2px solid seagreen;
+    overflow: auto;
+}
+/* #outerbox{
+    height: 90%;
+    width: 80%;
+    border: 3px solid gold;
+} */
+/* #currentTopic{
+    height: 90%;
+    width: 80%;
+    border: 2px solid fuchsia;
+} */
+/* #currentTopic2{
+    height: calc(90% - 10%);
+    border: 2px solid red;
+} */

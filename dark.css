@@ -1,0 +1,463 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 20px;
+    background: var(--finalbgcolor);
+    overflow-x: hidden;
+}
+
+:root {
+    --finalbgcolor: radial-gradient(#1F2833, #0d131b, #1F2833);
+    --navfontcolor: #ede8f5;
+    --cardbackground: #8697c4;
+    --bodybackground: #1f2833;
+    --fontcolor: #66fcf1;
+    --secfontcolor: #51cfc8;
+    --secbodybackground: #0b0c10;
+    --footercolor: rgb(30, 30, 30);
+    --textshadow: 6px 9px 14px #787777;
+
+}
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bodybackground);
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    font-family: serif;
+    color: var(--navfontcolor);
+    display: grid;
+
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--footercolor);
+    box-shadow: 0px 2px 18px rgba(226, 222, 222, 0.211);
+    padding: 0px 16px;
+}
+
+.logo {
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.home {
+    color: var(--secfontcolor);
+    margin: 0px;
+    padding-top: 14px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: var(--navfontcolor);
+}
+
+.aboutus {
+    height: 30%;
+    text-align: center;
+    font-size: 101px;
+    text-shadow: 6px 9px 14px #787777;
+
+    height: 40vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    color: var(--fontcolor);
+
+
+}
+
+.aboutus::selection {
+    color: var(--secbodybackground);
+    background-color: var(--fontcolor);
+}
+
+.why {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+
+
+    height: 80vh;
+
+}
+
+.why div {
+    width: 50%;
+    padding: 15px;
+    transition: all 0.2s ease-in;
+
+    flex-wrap: wrap;
+
+}
+
+.why div:hover {
+    scale: 1.07;
+}
+
+.why h2 {
+    font-size: 56px;
+    margin-left: 25px;
+
+    margin-top: 7vh;
+    font-family: serif;
+    color: var(--fontcolor);
+    color: var(--secfontcolor);
+    text-shadow: var(--textshadow);
+
+}
+
+.why h2::selection {
+    color: var(--secbodybackground);
+    background-color: var(--fontcolor);
+}
+
+.why p {
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 90%;
+    font-weight: 500;
+
+    font-family: serif;
+    color: var(--navfontcolor);
+
+}
+
+.why img {
+
+    height: 420px;
+    width: 50%;
+    border-radius: 40px;
+    padding: 30px;
+    transition: all 0.3s ease-in;
+
+
+}
+
+.why img:hover {
+    scale: 1.07;
+}
+
+
+.vision {
+    height: 40%;
+    display: flex;
+
+
+    height: 80vh;
+}
+
+.vision div {
+    padding: 15px;
+    transition: all 0.2s ease-in;
+
+}
+
+.vision div:hover {
+    scale: 1.07;
+}
+
+.vision img {
+    width: 50%;
+    height: 420px;
+    border-radius: 40px;
+    padding: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.vision img:hover {
+    scale: 1.07;
+}
+
+
+.vision h2 {
+    margin-left: 25px;
+    font-size: 56px;
+
+    font-family: serif;
+    color: var(--fontcolor);
+    color: var(--secfontcolor);
+    text-shadow: var(--textshadow);
+
+}
+
+.vision h2::selection {
+    color: var(--secbodybackground);
+    background-color: var(--fontcolor);
+}
+
+.vision p {
+
+    font-size: 25px;
+    width: 90%;
+    margin-left: 25px;
+    margin-top: -17px;
+
+    margin-top: 20px;
+    font-family: serif;
+    color: var(--navfontcolor);
+}
+
+.meet {
+
+    font-size: 56px;
+    text-align: center;
+    color: var(--fontcolor);
+    color: var(--secfontcolor);
+    text-shadow: var(--textshadow);
+
+
+}
+
+.meet::selection {
+    color: var(--secbodybackground);
+    background-color: var(--fontcolor);
+}
+
+.cards {
+
+    height: 60vh;
+    margin-top: 60px;
+}
+
+.card {
+
+    background-image: linear-gradient(#1F2833, #0d131b, #1F2833);
+}
+
+.card img {
+    height: 240px;
+    width: 240px;
+    transition: all 0.2s ease-in;
+}
+
+
+
+.card img:hover {
+    scale: 1.1;
+}
+
+.card h5 {
+    font-family: serif;
+    color: var(--navfontcolor);
+}
+
+.card p {
+
+    color: var(--navfontcolor);
+}
+
+.extra {
+    height: 30vh;
+}
+
+/* footer {
+
+    padding: 0px;
+    background-color: var(--footercolor);
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-family: serif;
+    position: relative;
+    bottom: 0px;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+    margin: 0;
+} */
+
+footer {
+
+    padding: 0px;
+    background-color: var(--bodybackground);
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-family: serif;
+
+    margin-top: 30px;
+    position: relative;
+    bottom: -22px;
+  
+}
+
+footer p {
+    margin: 0;
+}
+
+/* @media (max-width:680px){
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+} */
+
+
+/* 
+@media(max-width:800px) {
+    .header{
+        height: 40px;
+    }
+    .profile{
+        height: 40px;
+        width: 40px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .why {
+        flex-wrap: wrap;
+    }
+
+    .why h2 {
+        text-align: center;
+    }
+
+    .why p {
+        text-align: center;
+    }
+
+    .why div {
+
+        width: 100%;
+    }
+
+    .why img {
+        width: 100%;
+    }
+
+    .vision {
+        flex-wrap: wrap;
+    }
+
+    .vision h2 {
+        text-align: center;
+    }
+
+    .vision p {
+        text-align: center;
+    }
+
+    .vision div {
+
+        width: 100%;
+    }
+
+    .vision img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        background-color: transparent;
+    }
+
+    .extra {
+        height: 20vh;
+        width: 100%;
+    }
+    /* .footer{
+        width: 100%;
+        position: sticky;
+        bottom: 5px;
+    } */
+
+
+/* @media(max-width:380px){
+    .vision{
+        width: 100%;
+        margin-top: 20vh;
+    }
+    .meet{
+        width: 100%;
+        margin-top: 4vh;
+    }
+
+} */
+/* 
+@media (max-width:290px) {
+    .meet{
+        width: 100%;
+        height: 40px;
+        margin-top: 4vh;
+    }
+}
+ */
+
+/* @media(max-width:800px){
+    .why img {
+        display: block;
+        width: 100%;
+    }
+    .vision img{
+        display: block;
+        width: 100%;
+    }
+    .cards{
+        margin-bottom: 30px;
+    }
+    .footer{
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 5px;
+        /* margin-top: 300px; */
+    /* } */
+/* }  */
+
+
+
+/* @media(min-width:200px) and (max-width:900px){
+.cards {
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.extra{
+    display: none;
+}
+footer{
+    margin-top: 90vh;
+    position:relative;
+bottom: 0px;
+}
+} */
+
